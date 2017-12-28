@@ -1,0 +1,18 @@
+{
+    "description": "CSS Modules for Atomic.Fusion",
+    "type": "neos-package",
+    "name": "packagefactory/atomicfusion-cssmodules",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PackageFactory\\AtomicFusion\\CssModules\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "PackageFactory.AtomicFusion.CssModules"
+        }
+    }
+}

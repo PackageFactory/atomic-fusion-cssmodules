@@ -1,0 +1,4 @@
+PackageFactory:
+  AtomicFusion:
+    CssModules:
+      enable: true
