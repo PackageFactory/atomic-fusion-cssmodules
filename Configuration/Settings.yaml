@@ -2,3 +2,15 @@ PackageFactory:
   AtomicFusion:
     CssModules:
       enable: true
+      contextName: styles
+      tryFiles:
+        - resource://{packageKey}/Private/Fusion/{componentPath}.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/{componentBaseName}.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/style.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/Style.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/styles.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/Styles.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/index.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/Index.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/component.css.json
+        - resource://{packageKey}/Private/Fusion/{componentPath}/Component.css.json
