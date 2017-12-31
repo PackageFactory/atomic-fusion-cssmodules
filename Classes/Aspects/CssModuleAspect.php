@@ -65,7 +65,7 @@ class CssModuleAspect
         $componentPath = implode('/', $fusionPrototypeNameSegments);
         $componentBaseName = array_pop($fusionPrototypeNameSegments);
 
-        foreach($this->tryFiles as $fileNamePattern) {
+        foreach ($this->tryFiles as $fileNamePattern) {
             $fileName = $fileNamePattern;
             $fileName = str_replace('{fusionPrototypeName}', $fusionPrototypeName, $fileName);
             $fileName = str_replace('{packageKey}', $packageKey, $fileName);
