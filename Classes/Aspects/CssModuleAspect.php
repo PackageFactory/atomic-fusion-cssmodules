@@ -37,7 +37,7 @@ class CssModuleAspect
      * @param JoinPointInterface $joinPoint
      * @return mixed
      */
-    public function addStyleInformationToComponent(JoinPointInterface $joinPoint) : string
+    public function addStyleInformationToComponent(JoinPointInterface $joinPoint)
     {
         $componentImplementation = $joinPoint->getProxy();
         $fusionPrototypeName = $this->getFusionObjectNameFromFusionObject($componentImplementation);
