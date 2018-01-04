@@ -32,8 +32,7 @@ class CssModuleAspect
     protected $contextName;
 
     /**
-     * @Flow\Around("setting(PackageFactory.AtomicFusion.CssModules.enable) && method(PackageFactory\AtomicFusion\FusionObjects\ComponentImplementation->evaluate())")
-     * @Flow\Around("setting(PackageFactory.AtomicFusion.CssModules.enable) && method(Neos\Fusion\FusionObjects\ComponentImplementation->evaluate())")
+     * @Flow\Around("setting(PackageFactory.AtomicFusion.CssModules.enable) && method(PackageFactory\AtomicFusion\FusionObjects\ComponentImplementation->renderComponent())")
      * @param JoinPointInterface $joinPoint
      * @return mixed
      */
