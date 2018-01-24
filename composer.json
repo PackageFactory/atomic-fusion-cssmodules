@@ -4,6 +4,7 @@
     "name": "packagefactory/atomicfusion-cssmodules",
     "require": {
         "neos/flow": "*",
+        "neos/fusion": "*",
         "packagefactory/atomicfusion": ">=2.5.0"
     },
     "autoload": {
