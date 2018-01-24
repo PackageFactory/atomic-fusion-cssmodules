@@ -2,6 +2,7 @@
     "description": "CSS Modules for Atomic.Fusion",
     "type": "neos-package",
     "name": "packagefactory/atomicfusion-cssmodules",
+	"license": "GPL-3.0",
     "require": {
         "neos/flow": "*",
         "neos/fusion": "*",
