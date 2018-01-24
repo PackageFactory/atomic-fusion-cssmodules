@@ -14,12 +14,18 @@ To enable this technology felt like a natural extension to the ecosystem of Atom
 
 ## What do CSS modules do?
 
-In short: CSS modules convert your CSS class names and other global identifiers (like `@keyframes`) into unique
-identifiers. When processing your CSS files, a JSON file is created, that maps the original class name to the new
-unique one.
+In short: [CSS Modules](https://github.com/css-modules/css-modules) convert your CSS class names and other global
+identifiers (like `@keyframes`) into unique identifiers. When processing your CSS files, a JSON file is created, that
+maps the original class name to the new unique one.
 
 This way it is ensured, that you can always use speaking identifiers that make sense in the context of your component,
 without having to worry about potential global naming conflicts.
+
+**PackageFactory.AtomicFusion.CssModules** helps you to include those \*.json files at the right place. It expects them
+to be present alongisde your Fusion components already - it won't generate them.
+
+In order to generate CSS Module files, you have to configure your frontend build pipeline accordingly. An example of
+how this could look like is given in the next section.
 
 ## Setting up CSS modules
 
