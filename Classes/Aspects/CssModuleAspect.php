@@ -8,6 +8,8 @@ use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Neos\Service\HtmlAugmenter;
 
 /**
+ * Create a `styles` context for components with accompanied CSS files
+ *
  * @Flow\Scope("singleton")
  * @Flow\Aspect
  */
@@ -57,6 +59,10 @@ class CssModuleAspect
         return $joinPoint->getAdviceChain()->proceed($joinPoint);
     }
 
+	/**
+	 * @param string $fusionPrototypeName
+	 * @return string
+	 */
     public function getCssModuleFileNameFromFusionPrototypeName(string $fusionPrototypeName) : string
     {
         list($packageKey, $componentName) = explode(':', $fusionPrototypeName);
@@ -79,6 +85,10 @@ class CssModuleAspect
         return '';
     }
 
+	/**
+	 * @param AbstractFusionObject $fusionObject
+	 * @return string
+	 */
     public function getFusionObjectNameFromFusionObject(AbstractFusionObject $fusionObject) : string
     {
         $fusionObjectReflection = new ClassReflection($fusionObject);
